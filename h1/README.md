@@ -1,17 +1,17 @@
-# H1 — Búsqueda secuencial de un medicamento en inventario
+# H1: buscar un medicamento en el inventario
 
 ## Proceso
 
-Buscar un medicamento por su código recorriendo el inventario desde el primer registro hasta encontrarlo o llegar al final. Este análisis considera una búsqueda secuencial y no supone que el inventario esté ordenado.
+El proceso que elegí es buscar un medicamento por su código. Se revisa el inventario desde el primer registro hasta encontrarlo. Para este ejemplo supongo que la lista no está ordenada.
 
 ## Quién sufre el problema
 
-El auxiliar de farmacia y el farmacéutico, cuando necesitan localizar rápidamente un producto para atender una consulta o verificar existencias.
+Este problema le puede pasar al auxiliar de farmacia o al farmacéutico cuando necesitan encontrar un producto para atender a un cliente o revisar si hay stock.
 
 ## Datos de muestra
 
-Ejemplo didáctico de códigos (no corresponde a datos reales de una farmacia): `MED-001`, `MED-014`, `MED-027`, `MED-103`, `MED-205`. Buscar `MED-103` puede revisar cuatro registros; buscar un código inexistente revisa los cinco.
+Para mostrarlo, uso estos códigos de ejemplo: `MED-001`, `MED-014`, `MED-027`, `MED-103` y `MED-205`. No son datos reales. Si busco `MED-103`, reviso cuatro registros. Si el código no está en la lista, reviso los cinco.
 
 ## Estimación
 
-**O(n)** en el peor caso: la búsqueda puede revisar los n registros del inventario, por ejemplo, cuando el código está al final o no existe.
+**O(n)** en el peor caso, porque podría tener que revisar todos los productos, por ejemplo si el que busco está al final o no aparece en el inventario.

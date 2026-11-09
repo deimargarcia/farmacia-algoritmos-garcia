@@ -1,8 +1,8 @@
 # C3 — Medición empírica de crecimiento
 
-La demo compara un proceso lineal (un ciclo) y uno cuadrático (dos ciclos anidados). Se ejecutó con .NET en configuración Release. Se descartó una corrida de calentamiento, se promediaron cinco corridas por tamaño y se escalaron los datos como n, 4n y 16n.
+En el taller comparé dos procesos: uno con un ciclo y otro con dos ciclos anidados. Los ejecuté con .NET en modo Release. Primero hice una corrida de calentamiento, que no conté; después repetí cada medición cinco veces y saqué el promedio. Usé tamaños n, 4n y 16n.
 
-Los datos de entrada son tamaños sintéticos; los tiempos son de esta máquina y pueden variar entre corridas.
+Los tamaños son ejemplos para la prueba. Los tiempos son de mi corrida y pueden cambiar un poco si la vuelvo a ejecutar o si uso otra computadora.
 
 ## Tabla de mediciones
 
@@ -12,7 +12,7 @@ Los datos de entrada son tamaños sintéticos; los tiempos son de esta máquina 
 | 4 000 | 0,1283 | 18,6497 |
 | 16 000 | 0,0388 | 264,3824 |
 
-La tendencia del proceso cuadrático se hace visible al crecer n; los tiempos lineales de esta corrida son demasiado pequeños y variables para mostrar una progresión limpia. Por eso esta tabla se interpreta como evidencia de una corrida concreta, no como una garantía ni como sustituto del análisis teórico.
+En esta corrida el proceso de dos ciclos tardó más al aumentar el tamaño. Los tiempos del proceso lineal son muy pequeños y salieron irregulares, así que la tabla muestra lo que pasó en esta prueba; no significa que siempre dará exactamente esos tiempos.
 
 Para repetir la medición desde `demo/`:
 
@@ -20,8 +20,8 @@ Para repetir la medición desde `demo/`:
 dotnet run -c Release -- medicion
 ```
 
-## Relación entre código y orden
+## Cómo se relaciona con el código
 
-- `LinearProcess`: un ciclo que visita n iteraciones, O(n).
-- `QuadraticProcess`: dos ciclos anidados de n iteraciones, O(n²).
-- O grande describe el peor caso; se descartan constantes porque no cambian la forma de crecimiento.
+- `LinearProcess` tiene un ciclo que se repite n veces, por eso es O(n).
+- `QuadraticProcess` tiene dos ciclos, uno dentro del otro, por eso es O(n²).
+- O grande describe el peor caso. Las constantes se descartan porque no cambian la forma de crecimiento.
