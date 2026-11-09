@@ -1,1 +1,1 @@
-# caso-algoritmos-garciaventura
+# farmacia-algoritmos-garcia
