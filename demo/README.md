@@ -1,12 +1,12 @@
 # Demo en C# para órdenes de crecimiento y medición
 
-Hice este programa pequeño para probar un proceso lineal y otro cuadrático, como vimos en clase. Los tiempos cambian según la computadora y la corrida.
+Hice este programa pequeño para correr las mediciones de C4 y C5 en C#. Los tiempos cambian según la computadora y la corrida.
 
 Desde esta carpeta:
 
 ```powershell
-dotnet run -c Release -- ordenes
-dotnet run -c Release -- medicion
+dotnet run -c Release -- c4
+dotnet run -c Release -- c5
 ```
 
-Con `medicion` se hace primero una corrida de calentamiento y luego se promedian cinco mediciones para cada tamaño: `n`, `4n` y `16n`. Se miden solo los ciclos del ejemplo.
+`c4` compara búsqueda lineal y binaria, y calcula por separado el costo de ordenar. `c5` compara inserción, MergeSort y QuickSort. En ambos casos se descarta el calentamiento y se promedian tres corridas.
