@@ -1,3 +1,4 @@
+//Deimar Omar Garcia Ventura
 using System.Diagnostics;
 
 namespace Integradora.VarianteA;
