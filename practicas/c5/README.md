@@ -4,7 +4,18 @@ Comparé inserción, que tiene dos ciclos y es cuadrático en el peor caso, con 
 
 ## Protocolo
 
-- Programa en C# ejecutado con `dotnet run -c Release -- c5` desde `demo/`.
+### Programa y código
+
+El programa en C# se ejecuta desde `demo/` con:
+
+```powershell
+dotnet run -c Release -- c5
+```
+
+El código de inserción, MergeSort y QuickSort, junto con la medición, está en [`demo/Program.cs`](../../demo/Program.cs), en las funciones `RunSortTournament`, `InsertionSort`, `MergeSort` y `QuickSort`.
+
+### Protocolo
+
 - Cantidades: 1.000, 4.000 y 16.000 números.
 - Los datos se mezclan con una semilla fija para poder repetir la corrida.
 - Descarté el calentamiento y promedié 3 corridas por algoritmo y tamaño.

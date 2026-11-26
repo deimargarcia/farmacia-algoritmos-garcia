@@ -10,7 +10,7 @@ Este problema le puede pasar al auxiliar de farmacia o al farmacéutico cuando n
 
 ## Datos de muestra
 
-Para mostrarlo, uso estos códigos de ejemplo: `MED-001`, `MED-014`, `MED-027`, `MED-103` y `MED-205`. No son datos reales. Si busco `MED-103`, reviso cuatro registros. Si el código no está en la lista, reviso los cinco.
+Para mostrarlo, uso estos códigos de ejemplo: MED-001, MED-014, MED-027, MED-103 y MED-205. No son datos reales. Si busco MED-103, reviso cuatro registros. Si el código no está en la lista, reviso los cinco.
 
 ## Estimación
 

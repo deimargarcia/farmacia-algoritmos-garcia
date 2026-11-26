@@ -4,7 +4,18 @@ Quise comparar cuánto tardan las dos búsquedas en encontrar un dato que no est
 
 ## Cómo hice la medición
 
-- Programa en C# ejecutado con `dotnet run -c Release -- c4` desde `demo/`.
+### Programa y código
+
+El programa en C# se ejecuta desde `demo/` con:
+
+```powershell
+dotnet run -c Release -- c4
+```
+
+El código que implementa esta comparación está en [`demo/Program.cs`](../../demo/Program.cs), en las funciones `RunSearchComparison`, `LinearSearchBatch` y `BinarySearchBatch`.
+
+### Protocolo
+
 - Probé arreglos de 1.000, 4.000, 16.000 y 64.000 elementos.
 - En cada tamaño medí un lote de 5.000 búsquedas de valores ausentes.
 - Hice un calentamiento que descarté y promedié 3 corridas para cada tiempo.

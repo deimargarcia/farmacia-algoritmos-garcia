@@ -8,9 +8,9 @@ dotnet run -c Release --project hitos/h2/medicion.csproj
 
 | Productos | Lista: tres tiempos (ms) / promedio | Veces vs. fila anterior | Tabla hash: tres tiempos (ms) / promedio | Veces vs. fila anterior |
 |---:|---|---:|---|---:|
-| 150 | 146,6629 / 161,8584 / 184,2673 · **164,2629** | — | 1,6856 / 1,9381 / 2,8063 · **2,1433** | — |
-| 300 | 331,6549 / 370,9471 / 341,3262 · **347,9761** | 2,12× | 2,1229 / 3,5957 / 2,4051 · **2,7079** | 1,26× |
-| 600 | 843,5849 / 884,1028 / 767,4869 · **831,7249** | 2,39× | 2,0866 / 2,1010 / 1,9223 · **2,0366** | 0,75× |
-| 1.200 | 1.119,5944 / 1.219,3704 / 1.306,4429 · **1.215,1359** | 1,46× | 1,0797 / 1,7774 / 6,5185 · **3,1252** | 1,53× |
+| 150 | 191,4156 / 178,3855 / 199,7215 · **189,8409** | — | 2,7915 / 2,4720 / 2,8673 · **2,7103** | — |
+| 300 | 337,8599 / 380,6388 / 497,6551 · **405,3846** | 2,14× | 1,8405 / 2,9173 / 2,0867 · **2,2815** | 0,84× |
+| 600 | 861,9374 / 753,4113 / 844,5930 · **819,9806** | 2,02× | 1,6637 / 2,4032 / 1,9976 · **2,0215** | 0,89× |
+| 1.200 | 1.526,5681 / 1.567,5185 / 1.414,2306 · **1.502,7724** | 1,83× | 1,7263 / 2,1018 / 6,4594 · **3,4292** | 1,70× |
 
-La lista tardó más al crecer los datos, aunque sus tiempos no se duplicaron de forma pareja; influyeron la caché y el ruido de la computadora. La tabla hash se mantuvo en pocos milisegundos, con una corrida más ruidosa en el último tamaño. Los resultados siguen la tendencia esperada: O(n) para la lista y O(1) promedio para la tabla hash.
+La lista creció cerca de dos veces al duplicar los datos, como se espera de O(n), aunque el último factor fue menor. La tabla hash se mantuvo alrededor de 2 a 3 ms; el último tamaño tuvo una medición ruidosa. En esta corrida, la tendencia coincide con O(1) promedio para la tabla hash, pero los milisegundos variaron entre repeticiones.
