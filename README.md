@@ -11,4 +11,6 @@ Mi caso es el inventario de una farmacia: buscar productos para atender ventas, 
 
 ## Estado
 
-El expediente reúne H1, las prácticas C3-C6 y los hitos H2 y H3. Las cantidades de la farmacia son estimaciones indicadas en H2. La integradora ya está entregada; para la defensa me falta practicar la explicación del caso, las estructuras elegidas y las mediciones.
+Mi proceso es gestionar el inventario de una farmacia: buscar productos por código, actualizar el stock de las ventas y decidir qué reponer. Las cantidades son estimaciones indicadas en H2.
+
+H1, las prácticas C3-C6 y los hitos H2 y H3 están en el expediente. La integradora tiene listos I1 (análisis), I2 (solución en C#) e I3 (mediciones), y la carpeta está subida a GitHub. Me falta confirmar que entregué el enlace en Classroom. Para la defensa, debo practicar la explicación del caso, las estructuras elegidas y las tablas de resultados.
