@@ -1,4 +1,4 @@
-# H3: comparar fuerza bruta y programación dinámica
+H3: comparar fuerza bruta y programación dinámica
 
 En la farmacia comparé dos formas de decidir qué productos reponer con un presupuesto limitado. Cada producto candidato tiene un costo y un puntaje de prioridad; se puede comprar un paquete de cada producto o dejarlo para después. El objetivo es elegir los paquetes que den el mayor puntaje sin pasar el presupuesto.
 

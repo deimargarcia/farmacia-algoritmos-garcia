@@ -11,6 +11,8 @@ Mi caso es el inventario de una farmacia: buscar productos para atender ventas, 
 
 ## Estado
 
-Mi proceso es gestionar el inventario de una farmacia: buscar productos por código, actualizar el stock de las ventas y decidir qué reponer. Las cantidades son estimaciones indicadas en H2.
+Mi caso es la gestión del inventario de una farmacia: buscar productos por código, actualizar existencias y decidir qué reponer. Las cantidades que uso son estimaciones indicadas en H2.
 
-H1, las prácticas C3-C6 y los hitos H2 y H3 están en el expediente. La integradora tiene listos I1 (análisis), I2 (solución en C#) e I3 (mediciones), y la carpeta está subida a GitHub. Me falta confirmar que entregué el enlace en Classroom. Para la defensa, debo practicar la explicación del caso, las estructuras elegidas y las tablas de resultados.
+El expediente reúne H1, las prácticas C3-C6 y los hitos H2 y H3. Para la defensa me falta practicar un recorrido breve del caso, explicar mis decisiones con evidencia y razonar un cambio en vivo. Debo llegar con el repositorio abierto y la pantalla lista para compartir por Teams.
+
+Usé ChatGPT como apoyo para redactar, revisar y trabajar en el código; ejecuté los programas para comprobar resultados y tiempos. Los esqueletos, enunciados y pruebas proporcionados por el docente son el material de partida de las prácticas.

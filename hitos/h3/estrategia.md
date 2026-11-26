@@ -1,12 +1,12 @@
-# H3: elegir qué productos reponer
+H3: elegir qué productos reponer
 
-## Mi caso
+Mi caso
 
 En la farmacia puede haber varios productos con poco stock, pero el presupuesto de reposición no siempre alcanza para comprarlos todos. Para cada producto candidato considero un paquete de reposición, su costo en bolivianos y un puntaje de prioridad. El objetivo es elegir paquetes sin pasar el presupuesto y obtener el mayor puntaje. Cada paquete se elige una vez o se deja para otra compra.
 
 Los puntajes son una forma sencilla de representar la urgencia de cada producto según su stock y movimiento. Para las mediciones usaré datos de ejemplo generados por el programa, no registros reales de una farmacia.
 
-## ¿Voraz o programación dinámica?
+¿Voraz o programación dinámica?
 
 Un voraz que elija primero el mayor puntaje por boliviano no siempre obtiene la mejor compra. Por ejemplo, con presupuesto de Bs 50 y estos paquetes:
 
